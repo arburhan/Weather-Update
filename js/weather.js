@@ -7,7 +7,7 @@ const searchTemp=()=>{
     fetch(url)
     .then(res => res.json())
     .then(data => displayWeather(data));
-    city..value='';
+    city.value='';
 }
 const displayWeather=info=>{
     document.getElementById('w-city').innerText = `${info.name}`;
